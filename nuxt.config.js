@@ -43,10 +43,15 @@ export default {
   modules: [
     '@nuxtjs/pwa',
     'vue-scrollto/nuxt',
+    '@bazzite/nuxt-optimized-images',
 
     // Or if you have custom options...
     ['vue-scrollto/nuxt', { duration: 300 }]
   ],
+
+  optimizedImages: {
+    optimizeImages: true
+  },
   /*
    ** Build configuration
    */
