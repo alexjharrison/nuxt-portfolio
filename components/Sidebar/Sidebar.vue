@@ -35,6 +35,7 @@
         <a
           href="https://aharrison.xyz/Alex%20Harrison%20Resume%202018.pdf"
           target="_blank"
+          rel="noreferrer noopener"
           >Resume</a
         >
       </li>
