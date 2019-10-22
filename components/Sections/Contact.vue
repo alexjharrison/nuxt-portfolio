@@ -5,30 +5,42 @@
       <a
         class="text-blue-600 text-2xl flex items-center my-5"
         href="https://github.com/alexjharrison"
-        ><img
-          class="h-16 mr-4"
-          src="~assets/img/github-logo.png"
-          alt="github logo"
-        />github.com/alexjharrison</a
       >
+        <picture>
+          <source
+            class="h-16 mr-4"
+            :srcset="require('~/assets/img/github-logo.png?webp')"
+            alt="github logo"
+            type="image/webp"
+          />
+          <img
+            class="h-16 mr-4"
+            src="~assets/img/github-logo.png"
+            alt="github logo"
+          />
+        </picture>
+        github.com/alexjharrison
+      </a>
       <a
         class="text-blue-600 text-2xl flex items-center my-5"
         href="https://www.linkedin.com/in/alexanderjharrison/"
-        ><img
+      >
+        <img
           class="h-16 mr-4"
           src="~assets/img/linkedin-logo.png"
           alt="github logo"
-        />linkedin.com/in/alexanderjharrison/</a
-      >
+        />linkedin.com/in/alexanderjharrison/
+      </a>
       <a
         class="text-blue-600 text-2xl flex items-center my-5"
         href="alexjharrison@gmail.com"
-        ><img
+      >
+        <img
           class="h-16 mr-4"
           src="~assets/img/email.png"
           alt="github logo"
-        />alexjharrison@gmail.com</a
-      >
+        />alexjharrison@gmail.com
+      </a>
     </div>
   </div>
 </template>

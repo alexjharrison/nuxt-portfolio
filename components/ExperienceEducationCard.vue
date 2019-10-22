@@ -4,17 +4,23 @@
       class="flex border-b border-gray-500 items-center justify-between flex-wrap"
     >
       <h3 class="text-2xl text-gray-800 my-2">{{ header }}</h3>
-      <!-- <img
-        :src="webp"
-        :alt="`${header} logo`"
-        type="image/png"
-        class="h-16 object-scale-down mt-4 mb-2"
-      /> -->
-      <!-- <img
-          :src="imgLink"
+      <picture v-if="headerImg">
+        <source
+          :srcset="require('~/assets/img/' + headerImg + '?webp')"
+          :alt="`${header} logo`"
+          type="image/webp"
+        />
+        <source
+          :srcset="require('~/assets/img/' + headerImg)"
+          :alt="`${header} logo`"
+          type="image/png"
+        />
+        <img
+          :src="require('~/assets/img/' + headerImg)"
           :alt="`${header} logo`"
           class="h-16 object-scale-down mt-4 mb-2"
-        /> -->
+        />
+      </picture>
     </div>
     <div class="xl:flex xl:border-0">
       <div class="border-b border-gray-500 xl:border-0 pt-4 pb-2 my-auto">
@@ -43,14 +49,6 @@ export default {
     headerImg: { type: String, default: '' },
     overviewLines: { type: Array, default: () => [] },
     responsibilities: { type: Array, default: () => [] }
-  },
-  computed: {
-    imgLink() {
-      return require('~/assets/img/' + this.headerImg)
-    },
-    webp() {
-      return require('~/assets/img/' + this.headerImg + '?webp')
-    }
   }
 }
 </script>

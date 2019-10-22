@@ -4,11 +4,25 @@
       class="text-center border-b border-gray-600 cursor-pointer"
       @click="scroll"
     >
-      <img
-        src="~assets/img/alex-photo.jpg"
-        alt="alex portrait"
-        class="mx-auto rounded-full p-4 h-64 object-cover"
-      />
+      <picture>
+        <source
+          :srcset="require('~/assets/img/alex-photo.jpg?webp')"
+          alt="alex portrait"
+          class="mx-auto rounded-full p-4 h-64 object-cover"
+          type="image/webp"
+        />
+        <source
+          :srcset="require('~/assets/img/alex-photo.jpg')"
+          alt="alex portrait"
+          class="mx-auto rounded-full p-4 h-64 object-cover"
+          type="image/jpeg"
+        />
+        <img
+          src="~assets/img/alex-photo.jpg"
+          alt="alex portrait"
+          class="mx-auto rounded-full p-4 h-64 object-cover"
+        />
+      </picture>
       <p class="text-2xl">Alex Harrison</p>
       <p class="text-lg font-serif mb-6">Full Stack Web Dev</p>
     </div>
@@ -21,9 +35,8 @@
         <a
           href="https://aharrison.xyz/Alex%20Harrison%20Resume%202018.pdf"
           target="_blank"
+          >Resume</a
         >
-          Resume
-        </a>
       </li>
     </ul>
   </aside>
