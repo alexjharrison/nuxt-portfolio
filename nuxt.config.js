@@ -59,7 +59,7 @@ export default {
     /*
      ** You can extend webpack config here
      */
-    analyze: true,
+    // analyze: true,
 
     extend(config, ctx) {}
   }
