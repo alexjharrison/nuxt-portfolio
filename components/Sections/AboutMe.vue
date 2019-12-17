@@ -1,6 +1,6 @@
 <template>
   <div id="about-me">
-    <section-header text="About Me" />
+    <SectionHeader text="About Me" />
     <div
       class="px-5 py-12 text-gray-900 mx-auto text-xl font-light leading-relaxed"
     >

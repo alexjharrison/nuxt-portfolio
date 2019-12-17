@@ -61,6 +61,7 @@ export default {
      */
     // analyze: true,
 
+    //eslint-disable-next-line
     extend(config, ctx) {}
   }
 }
