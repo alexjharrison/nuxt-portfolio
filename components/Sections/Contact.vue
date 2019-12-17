@@ -58,3 +58,9 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+picture {
+  margin-top: -30px;
+}
+</style>

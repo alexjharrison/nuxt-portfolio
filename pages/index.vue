@@ -42,4 +42,17 @@ export default {
   @apply min-h-screen flex justify-center items-center text-center mx-auto;
 }
 */
+
+h3 {
+  @apply text-2xl font-semibold;
+}
+
+h4 {
+  @apply text-xl font-semibold;
+}
+
+p,
+li {
+  @apply text-xl;
+}
 </style>
