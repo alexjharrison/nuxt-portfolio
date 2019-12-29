@@ -1,19 +1,26 @@
 <template>
   <div id="proficiencies">
     <section-header text="Proficiencies" />
-    <h1>Proficiencies</h1>
+    <proficiencies-card
+      v-for="prof in proficiencies"
+      :key="prof.category"
+      v-bind="prof"
+    />
   </div>
 </template>
 
 <script>
 import SectionHeader from '../SectionHeader'
 import IntersectionObserver from '~/mixins/IntersectionObserver'
+import proficiencies from '~/assets/data/proficiencies.js'
+import ProficienciesCard from '~/components/ProficienciesCard'
 export default {
-  components: { SectionHeader },
+  components: { SectionHeader, ProficienciesCard },
   mixins: [IntersectionObserver],
   data() {
     return {
-      id: 'proficiencies'
+      id: 'proficiencies',
+      proficiencies
     }
   }
 }
