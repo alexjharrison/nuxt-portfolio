@@ -14,7 +14,7 @@
         user-focused applications using the most effective tools for the job
       </p>
       <p class="mt-6 text-2xl">
-        I currently work as a web developer for STI Firestop bulding internal
+        I currently work as a web developer for STI Firestop building internal
         applications and modernizing the company website
       </p>
     </div>

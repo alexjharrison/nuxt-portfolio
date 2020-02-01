@@ -34,7 +34,7 @@ export default [
     ]
   },
   {
-    category: 'CSS Libraries',
+    category: 'CSS Utilities',
     technologies: [
       {
         img: ['node-sass'],
