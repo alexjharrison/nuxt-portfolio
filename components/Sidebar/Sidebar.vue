@@ -33,7 +33,7 @@
         class="text-xl mt-4 pl-2 border-l-2 border-transparent hover:border-red-500 hover:text-blue-800 text-blue-600"
       >
         <a
-          href="/Alex Harrison Resume 2020.pdf"
+          href="/Alex Harrison Resume.pdf"
           target="_blank"
           rel="noreferrer noopener"
           >Resume</a

@@ -1,12 +1,27 @@
 export default [
   {
+    header: 'Incyte Studios',
+    headerImg: 'incyte.jpg',
+    overviewLines: [
+      'Software Developer',
+      '2021 - Present',
+      'Oklahoma City, OK (remote)'
+    ],
+    responsibilities: [
+      'Developed web applications with Vue 3 + Composition API, Typescript, Docker, Hasura, GraphQL, & PostgreSQL stack',
+      'Researched & implemented offline-first functionality using URQL Grahcache + PWA',
+      'Created automation scripts to generate TS types from GraphQL schema'
+    ]
+  },
+  {
     header: 'STI Firestop',
     headerImg: 'sti-logo.png',
-    overviewLines: ['Web Developer', '2018 - Present', 'Branchburg, NJ'],
+    overviewLines: ['Web Developer', '2018 - 2021', 'Branchburg, NJ'],
     responsibilities: [
-      'Lead the front end development of the website redesign',
-      'Built Barrier Management Program to automate report generation',
-      'Created system selector for customers to find compatible products'
+      'Designed build process and wrote all frontend code for STIFirestop.com redesign using Vue static site generator in order to enhance page speed and SEO',
+      'Maintained Firestop Locator React Native app',
+      'Built multi-lingual System Selector Tool in Vue so customers can find the appropriate firestop systems for their project',
+      'Built full stack Vue/Laravel web portal to replace paper system of tracking all firestop products included in project and generate report including all technical data sheets'
     ]
   },
   {
